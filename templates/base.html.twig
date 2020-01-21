@@ -10,26 +10,26 @@
     <body>
         <div class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
             <div class="container">
-                <a href="index.html" class="navbar-brand">Fund My Project</a>
+                <a href="{{ path('homepage') }}" class="navbar-brand">Fund My Project</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link" href="projects.html">Les Projets</a>
+                            <a class="nav-link" href={{ path('project_index') }}>Les Projets</a>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" id="download">Catégories <span class="caret"></span></a>
                             <div class="dropdown-menu" aria-labelledby="download">
-                                <a class="dropdown-item" href="category.html">Sport</a>
-                                <a class="dropdown-item" href="category.html">Musique</a>
-                                <a class="dropdown-item" href="category.html">Film</a>
-                                <a class="dropdown-item" href="category.html">Jeux</a>
+                                <a class="dropdown-item" href={{ path('category') }}>Sport</a>
+                                <a class="dropdown-item" href={{ path('category') }}>Musique</a>
+                                <a class="dropdown-item" href={{ path('category') }}>Film</a>
+                                <a class="dropdown-item" href={{ path('category') }}>Jeux</a>
                             </div>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="login.html">
+                            <a class="nav-link" href="{{ path('user_index') }}">
                                 <i class="fa fa-sign-in"></i>
                                 Me connecter
                             </a>
